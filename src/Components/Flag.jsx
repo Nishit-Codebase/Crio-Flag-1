@@ -46,7 +46,7 @@ export default function FlagsCard(){
             const data =  await response.json();
             setFlag(data);
         }catch(e){
-            console.error(e);
+            console.error("Error fetching data:",e);
         } 
         }
         apifetch();    
